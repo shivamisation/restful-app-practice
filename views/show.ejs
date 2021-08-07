@@ -1,0 +1,7 @@
+<h2><%= topic.title %> </h2>
+<p><%= topic.body %> </p>
+<h5><%= topic.created.toDateString() %> </h5>
+<a href="/topics/<%= topic._id %>/edit">Edit</a>
+<form action="/topics/<%= topic._id %>?_method=DELETE" method="POST">
+    <button>Delete</button>
+</form>

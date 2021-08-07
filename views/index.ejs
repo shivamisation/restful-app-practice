@@ -1,0 +1,15 @@
+<h1>index page !!!</h1>
+
+
+ <% topics.forEach(function(topic){ %>
+    <div>
+        <h4><%= topic.title %> </h4>
+        <p><%= topic.body.substring(0,10) %>... </p>
+        <span><%= topic.created.toDateString() %> </span>
+        <a href="/topics/<%= topic._id %> ">read more</a>
+    </div>
+
+ <% }) %> 
+
+ <a href="/topics/new">Do something new</a>
+ 
